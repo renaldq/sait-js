@@ -47,8 +47,6 @@ var favouriteRecipie = {
     }
 };
 
-
-
 // var recipieDirection = favouriteRecipie.directions;
 
 // favouriteRecipie.servings = 2;
