@@ -21,37 +21,38 @@
 
 // setInterval(updateTime, 1000);
 
-
 // var direction;
 
-// var moveForward = true;
+var moveForward = true;
 
-// function move() {
-//     var img = document.getElementById('gif');
-//     var currentLeft = parseInt(img.style.left);
+function move() {
+    var img = document.getElementById('gif');
+    var currentLeft = parseInt(img.style.left);
 
-//     if (moveForward && (currentLeft > (window.innerWidth-img.width))) {
-//         moveForward = false;
-//     }
+    if (moveForward && (currentLeft > (window.innerWidth-img.width))) {
+        moveForward = false;
+    }
 
-//     if (!moveForward && (currentLeft <= 0)) {
-//         walkForwards = true;
-//     }
+    if (!moveForward && (currentLeft <= 0)) {
+        moveForward = true;
+    }
 
-//     if (moveForward) {
-//         img.style.left = (currentLeft + 2) + 'px';
-//     } else {
-//         img.style.left = (currentLeft - 2) + 'px';
-//     }
-// }
+    if (moveForward) {
+        img.style.left = (currentLeft + 2) + 'px';
+        // currentLeft += 2;
+    } else {
+        img.style.left = (currentLeft - 2) + 'px';
+        // currentLeft -= 2;
+    }
+}
 
-// setInterval(move, 50);
+setInterval(move, 10);
 
 // function sayHi (event) {
 //     alert('Hi!');
 // };
 
-var link = document.getElementById("saitLink");
-link.addEventListener("click", function (event) {
-    alert("Error");
-});
+// var link = document.getElementById("saitLink");
+// link.addEventListener("click", function (event) {
+//     alert("Error");
+// });
