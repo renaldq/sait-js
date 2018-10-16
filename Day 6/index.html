@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery</title>
+  </head>
+  <body>
+
+    <header>
+        <h1>Title of the page</h1>
+    </header>
+
+    <main>
+        <!-- <a href="http://www.yahoo.com" style="color: purple;">Yahoo</a><br>
+        <a href="http://www.google.com" style="color: green;">Google</a><br>
+        <a href="http://www.soundcloud.com" style="color: coral;">SoundCloud</a><br> -->
+
+        <!-- <form id="myForm">
+            Enter your name:
+            <input type="text" id="input" name="firstName">
+        </form> -->
+
+        <p id="error">This is an error</p>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+
+
+    <script src="jquery-3.3.1.js"></script>
+
+    <script>
+        
+        console.log($('a').html());
+        console.log($('a').attr('href'));
+        console.log($('a').css('color'));
+        
+        $('h1').css({'color': 'red'})
+ 
+        $(function() {
+            var links = $('a');
+            
+            links.each(function() {
+                var link = $(this);
+                link.text(link.text() + '!');
+            });
+        })
+
+        // functionclickHandler() {
+        //     console.log('clicked!');
+        // }
+
+        // $('#button').on('click', clickHandler);
+
+
+        // $('form').on('submit', function(event) {
+        //     event.preventDefault();
+
+        //     console.log('Not submitting the form');
+
+        // });
+        
+        // $('#error').toggle(5000);
+
+        $('#error').hide();
+
+        // $('#error').fadeIn(1000);
+        $('#error').slideDown(5000);
+
+        // $('#error').show(1000, function() {
+        //     $(this).addClass('alert');
+        // });
+
+
+
+    </script>
+
+    </body>
+</html>

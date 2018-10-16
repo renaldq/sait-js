@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Random Color Generator</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/randomcolor/0.5.2/randomColor.js">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+
+    <h1>Color Generator</h1>
+
+    <form>
+            
+        <label for="numberOfColors">How many colors in the palatte?</label>
+        <input type="text" id="numberOfColors" name="numberOfColors" required>
+
+
+        <label for="hue">Choose hue</label>
+        <select id="hue">
+            <option>Red</option>
+            <option>Orange</option>
+            <option>Yellow</option>
+            <option>Green</option>
+            <option>Blue</option>
+            <option>Purple</option>
+            <option>Pink</option>
+            <option>Monochrome</option>
+        </select>
+
+
+        <label for="luminocity">Choose luminocity</label>
+        <select id="luminocity">
+            <option>Light</option>
+            <option>Dark</option>
+            <option>Random</option>
+        </select>
+
+
+        <button>Submit</button>
+
+
+
+        <div id="color-box"></div>
+
+    </form>
+
+    <script href="https://cdnjs.cloudflare.com/ajax/libs/randomcolor/0.5.2/randomColor.js"></script>
+    <script src="jquery-3.3.1.js"></script>
+
+
+    <script>
+        
+        // var color = randomColor();
+
+
+        // Returns an array of ten green colors
+        randomColor({
+            count:1 0,
+            hue: 'green'
+            luminosity: 'dark'
+        });
+
+
+
+    </script>
+
+
+
+    </body>
+</html>
