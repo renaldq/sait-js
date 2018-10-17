@@ -3,20 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>Random Color Generator</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/randomcolor/0.5.2/randomColor.js">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/randomcolor/0.5.2/randomColor.js"> -->
     <link rel="stylesheet" href="./styles.css">
   </head>
-  <body>
+  <body id="wrapper">
 
-    <h1>Color Generator</h1>
+    <h1>Random Color Generator</h1>
 
-    <form>
-            
-        <label for="numberOfColors">How many colors in the palatte?</label>
-        <input type="text" id="numberOfColors" name="numberOfColors" required>
+    <br>
 
+    <form action="" method="post" id="form">
+        <label for="numOfColors">How many colors in the palette?</label>
+        <input type="text" id="numOfColors" name="numOfColors" required>
 
-        <label for="hue">Choose hue</label>
+        <!-- <label for="hue">Choose hue</label>
         <select id="hue">
             <option>Red</option>
             <option>Orange</option>
@@ -26,46 +26,36 @@
             <option>Purple</option>
             <option>Pink</option>
             <option>Monochrome</option>
-        </select>
+        </select> -->
 
-
-        <label for="luminocity">Choose luminocity</label>
+        <!-- <label for="luminocity">Choose luminocity</label>
         <select id="luminocity">
             <option>Light</option>
             <option>Dark</option>
             <option>Random</option>
-        </select>
+        </select> -->
 
-
-        <button>Submit</button>
-
-
-
-        <div id="color-box"></div>
+        <button type="submit" id="submitBtn">Submit</button>
 
     </form>
 
-    <script href="https://cdnjs.cloudflare.com/ajax/libs/randomcolor/0.5.2/randomColor.js"></script>
-    <script src="jquery-3.3.1.js"></script>
+    <br>
 
+    <div id="color-box"></div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/randomcolor/0.5.2/randomColor.js"></script>
+    <script src="jquery-3.3.1.js"></script>
 
     <script>
         
+        var numOfColors = document.getElementById('numOfColors');
+
+
         // var color = randomColor();
-
-
-        // Returns an array of ten green colors
-        randomColor({
-            count:1 0,
-            hue: 'green'
-            luminosity: 'dark'
-        });
 
 
 
     </script>
-
-
 
     </body>
 </html>
