@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Local Storage</title>
+
+	</head>
+
+	<body>
+
+
+
+        <script>
+            // set data
+            localStorage.setItem("username", "Janessa");
+            localStorage.firstName = "Janessa";
+
+            // get data
+            var name = localStorage.getItem("username"); // Janessa
+            var name = localStorage.username;
+            console.log(name);
+
+            // remove data
+            localStorage.removeItem("username");
+            localStorage.username = null;
+
+            localStorage.clear();
+
+            console.log(name);
+
+        </script>
+
+	</body>
+</html>

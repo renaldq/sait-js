@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <title>Lyric Search App</title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+        <link rel="stylesheet" href="./styles.css">
+	</head>
+
+	<body>
+
+        <h1>Lyric Search App</h1>
+
+        <form>
+            <label for="artist">Enter the artist:</label>
+            <input type="text" id="artist" name="artistName">
+
+            <label for="song">Enter the song title:</label>
+            <input type="text" id="song" name="songTitle">
+
+            <button type="submit" id="searchBtn">Search</button>
+        </form>
+
+        <p id="lyrics"></p>
+
+        <script>
+
+            var artist = document.getElementById('artist');
+            var song = document.getElementById('song');
+            var search = document.getElementById('searchBtn');
+
+            search.addEventListener('click', function(event) {
+                event.preventDefault();
+                fetch('https://api.lyrics.ovh/v1/'+artist.value+'/'+song.value)
+                .then(function(response) {
+                    return response.json();
+                })
+                .then(function(data) {
+                    console.log(data);
+                    document.getElementById('lyrics').innerHTML = data.lyrics;
+                })
+            });
+
+        </script>
+
+	</body>
+</html>
