@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <title>Day 8</title>
+	</head>
+
+	<body>
+
+
+
+        <script>
+
+            // var condition = true;
+
+            // if(condition) {
+            //     let a = 'Zeta';
+            //     console.log(a);
+            // }
+
+            // console.log(a);
+
+            // const arr = [1, 2, 3];
+            // const obj = { id: 0, name: 'Alpha' };
+
+            // arr = 4;
+            // obj.id = 2;
+
+            // console.log(arr);
+            // console.log(obj);
+
+            // var funcs = [];
+
+            // for (var i = 0; i < 3; i++) {
+            //     funcs.push(function() {
+            //         console.log(1)
+            //     });
+            // }
+
+            // const sum = function(num1, num2) {
+            //     return num1 + num2;
+            // }
+
+            // const sum = (num1, num2) => num1 + num2;
+
+            // console.log(sum(3, 4));
+
+            // let multiply = (num1, num2 = 1) => {
+            //     if (!num1) {
+            //         console.log("woa there");
+            //     }
+            //     return num1 * num2;
+            // }
+
+            // console.log(multiply(5,4));
+            // console.log(multiply(4));
+            // console.log(multiply());
+
+            // let array = [2, 3, 4, 1];
+            // for (let value of array) {
+            //     console.log(value);
+            // }
+
+            // function product(x, y, z) {
+            //     var numbers = [x, y, z];
+            //     return numbers.reduce((currentProduct, number) => currentProduct * number, 1);
+            // }
+                
+            // console.log(product(3, 4, 5)); // 60
+            // console.log(product(3, 4, 5, 6)); // 360
+            // console.log(product(1, 2, 3, 4, 5, 6)); // 720
+
+            // const user = {
+            //     name: 'Cody',
+            //     loginCount: 1,
+            //     goldStatus: true
+            // };
+            // const className = 'container';
+            // const html = '<div class="' + className + '">' +
+            // '<h2>Welcome' + (user.goldStatus ? ' to our gold status member, ' : ', ') +
+            // user.name + '!' + '</h2>' + 
+            // '<p>Today is ' + newDate() + 
+            // '</p>' + '<p>You have logged in ' + ++user.loginCount + ' times.</p>' 
+            // + '</div>';
+            
+            // document.getElementById('target').innerHTML = html;
+
+            // const myEmployee = {
+            //     active: true,
+            //     department: 'Engineering'
+            // };
+            
+            // function isActiveEngineer(employee) {
+            //     const active = employee.active;
+            //     const department = employee.department;
+            //     return department === 'Engineering' && active;
+            // }
+
+            // console.log(`Is myEmployee active? ${isActiveEngineer(myEmployee)}`);
+
+            // const trips = [
+            //     { mph: 10, hours: 3 },
+            //     { mph: 30, hours: 2 },
+            //     { mph: 25, hours: 4 }
+            // ];
+            
+            // for (let i = 0; i < trips.length; i++) {
+            //     console.log(trips[i].mph * trips[i].hours);}
+
+            // trips.forEach((trip, index, array) => {
+            //     console.log(trip.mph * trip.hours);
+            // });
+
+            // const availableLaptops = [
+            //     { name: 'MacBook', RAM: 8 },
+            //     { name: 'Asus', RAM: 32 },
+            //     { name: 'Lenovo', RAM: 16 },
+            //     { name: 'HP', RAM: 4 }
+            // ];
+
+            // const all16GB = availableLaptops.every(laptop => laptop.RAM >= 16);
+            // console.log(all16GB);
+
+            // const some16GB = availableLaptops.some(laptop => laptop.RAM >= 16);
+            // console.log(some16GB);
+
+            // const users = [
+            //     { username: 'ryan10', active: true },
+            //     { username: 'morgan', active: false }
+            // ];
+            
+            // const activeUsers = users.filter(user => user.active);
+            // console.log(activeUsers);
+
+
+            // const groceries = [
+            //     { name: 'bananas', aisle: 'produce', price: 2 },
+            //     { name: 'flour', aisle: 'baking', price: 5 },
+            //     { name: 'avocados', aisle: 'produce', price: 4},
+            //     { name: 'lettuce', aisle: 'produce', price: 5 },
+            //     { name: 'olive oil', aisle: 'baking', price: 10 },
+            //     { name: 'shampoo', aisle: 'beauty', price: 12 }
+            // ];
+            
+            // const produceLessThan5 = groceries.filter(grocery => grocery.aisle ==="produce" && grocery.price < 5);
+            
+            // console.log(produceLessThan5);
+
+            // An array of posts
+            // const posts = [
+            //     { id: 23, title: 'Becoming an ES6 Wizard', body: 'Ille vivere. Ut ad te ...' },
+            //     { id: 29, title: 'JavaScript Pro Tips', body: 'Pellentesque euismod ...' },
+            //     { id: 31, title: 'Acing your next JS interview', body: 'Lorem ipsum dolor sit amet...'}
+            // ];
+
+            // // Find the post with ID 29
+            // const currentId = 29;
+            // const currentPost = posts.find(post => currentId === post.id )
+
+            // console.log(currentPost.title);
+            // console.log(currentPost.body);
+
+            const transactions = [ 5, 10, 15 ];
+            
+            const sum = transactions.reduce(
+                (currentSum, transaction) =>
+                currentSum + transaction, 0);
+            
+            console.log(sum); // 30
+
+        </script>
+
+	</body>
+</html>
