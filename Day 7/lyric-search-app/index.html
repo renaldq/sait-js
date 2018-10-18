@@ -2,27 +2,26 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-        <title>Lyric Search App</title>
-        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <title>Lyric Finder</title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800,900" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
         <link rel="stylesheet" href="./styles.css">
 	</head>
 
 	<body>
 
-        <h1>Lyric Search App</h1>
-
-        <form>
-            <label for="artist">Enter the artist:</label>
-            <input type="text" id="artist" name="artistName">
-
-            <label for="song">Enter the song title:</label>
-            <input type="text" id="song" name="songTitle">
-
-            <button type="submit" id="searchBtn">Search</button>
-        </form>
-
-        <p id="lyrics"></p>
+        <div class="left-container">
+            <h1>LYRIC FINDER</h1>
+            <form id="form">
+                <input type="text" id="artist" name="artistName" placeholder="Artist"> <br> 
+                <input type="text" id="song" name="songTitle" placeholder="Song Title"> <br> <br>
+                <button type="submit" id="searchBtn">Search</button>
+            </form>
+        </div>
+        
+        <div class="right-container">
+            <p id="lyrics"></p>
+        </div>
 
         <script>
 
