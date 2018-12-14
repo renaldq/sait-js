@@ -7,9 +7,7 @@
         <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
         <link rel="stylesheet" href="./styles.css">
 	</head>
-
 	<body>
-
         <div class="left-container">
             <h1>LYRIC FINDER</h1>
             <form id="form">
@@ -18,17 +16,13 @@
                 <button type="submit" id="searchBtn">Search</button>
             </form>
         </div>
-        
         <div class="right-container">
             <p id="lyrics"></p>
         </div>
-
         <script>
-
             var artist = document.getElementById('artist');
             var song = document.getElementById('song');
             var search = document.getElementById('searchBtn');
-
             search.addEventListener('click', function(event) {
                 event.preventDefault();
                 fetch('https://api.lyrics.ovh/v1/'+artist.value+'/'+song.value)
@@ -40,8 +34,6 @@
                     document.getElementById('lyrics').innerHTML = data.lyrics;
                 })
             });
-
         </script>
-
 	</body>
 </html>
