@@ -1,2 +1,2 @@
 # sait-js
-Reposotory for JS exercise
+Reposotory for Javascript exercises
