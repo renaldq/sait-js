@@ -79,7 +79,7 @@ function next (event) {
     }
 }
 
-setInterval(next, 30000);
+setInterval(next, 12000);
 
 previousButton.addEventListener("click", previous);
 nextButton.addEventListener("click", next);

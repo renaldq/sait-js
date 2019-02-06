@@ -59,6 +59,7 @@ button {
     color: #575757;
     outline: none;
 }
+
 button:hover {
     color: white;
     background-color: #c4dfdb;
